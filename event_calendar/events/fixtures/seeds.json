@@ -1,0 +1,31 @@
+[
+    {
+        "model": "events.Event",
+        "fields": {
+            "name": "Gym",
+            "description": "Go to the gym",
+            "starts_at": "2021-07-11 16:20-07",
+            "ends_at": "2021-07-11 18:20-07"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "name": "Groceries",
+            "description": "Go get groceries at Walmart",
+            "starts_at": "2021-07-11 14:10-07",
+            "ends_at": "2021-07-11 15:00-07"
+        }
+    },
+    {
+        "model": "events.Event",
+        "fields": {
+            "name": "Cat",
+            "description": "Feed the cat",
+            "starts_at": "2021-07-11 14:05-07", 
+            "ends_at": "2021-07-11 14:10-07"
+        }
+    }
+]
+
+

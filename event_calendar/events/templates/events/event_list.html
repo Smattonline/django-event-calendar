@@ -1,0 +1,18 @@
+{% extends 'events/base.html' %}
+
+{% block content %}
+  <a href="{% url 'new_event' %}" class="new_event">Add Event</a>
+  {% for event in events %}
+    <div class="event">
+      <h2><a href="{% url 'event_detail' event_id=event.id %}">{{ event.name }}</a></h2>
+      <div class="datetime">
+        Created on: {{ event.created_at }}
+      </div>
+      <div>
+        Starts at: {{ event.starts_at }}    ||    
+        Ends at: {{ event.ends_at }}
+      </div>
+      <p>{{ event.description|linebreaksbr }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}

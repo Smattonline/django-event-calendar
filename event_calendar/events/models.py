@@ -7,3 +7,6 @@ class Event(models.Model):
     starts_at = models.DateTimeField(default=timezone.now)
     ends_at = models.DateTimeField(default=timezone.now)
     created_at = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.name
